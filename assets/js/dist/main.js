@@ -1,0 +1,1 @@
+jQuery(document).ready((function(t){t(".faq-question-button").on("click",(function(){t(this).next().hasClass("active")||(t(".faq-answer").removeClass("active"),t(".faq-question-button").removeClass("active")),t(this).next().toggleClass("active"),t(this).toggleClass("active")}))}));

@@ -1,0 +1,18 @@
+{
+	"version": 2,
+	"styles": {
+		"color": {
+			"text": "#000000",
+			"background": "#f5f1ea"
+		},
+        "elements": {
+            "heading": {
+                "color": "#371851",
+                "typography": {
+                    "font": "sans-serif",
+                    "text-transform": "uppercase"
+                }
+            }
+        }
+	}
+}
