@@ -5,7 +5,7 @@ const terser = require('gulp-terser');
 
 //scss
 function compilescss() {
-    return src('assets/main.scss')
+    return src('assets/css/main.scss')
         .pipe(sass())
         .pipe(cleanCSS({debug: true}, (details) => {
             console.log(`${details.name}: ${details.stats.originalSize}`);
@@ -16,15 +16,15 @@ function compilescss() {
 
 //js
 function compilejs() {
-    return src('assets/main.js')
+    return src('assets/js/main.js')
         .pipe(terser())
         .pipe(dest('assets'));
 }
 
 //watch
 function watchFiles() {
-    watch('assets/**/*.scss', compilescss);
-    watch('assets/main.js', compilejs);
+    watch('assets/css/**/*.scss', compilescss);
+    watch('assets/js/main.js', compilejs);
 }
 
 //exports
